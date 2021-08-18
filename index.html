@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="vendor/nivo-slider/themes/default/default.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="vendor/nivo-slider/nivo-slider.css" type="text/css" media="screen">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-numbers">
+            <span class="number-1">11 1234-1234</span>
+            <span class="number-2">11 1234-1234</span>
+        </div>
+        <nav class="navbar">
+        
+            <img class="brand" src="img/Teste.png">
+            <ul class="navbar-buttons">
+                <li><a href="">HOME</a></li>
+                <li class="dropdown"><a href="">EMPRESA</a>
+                    <ul class="submenu-1">
+                        <li><a href="">SUBMENU 1</a></li>
+                        <li><a href="">SUBMENU 1</a></li>
+                        <li><a href="">SUBMENU 1</a></li>
+                        <li class="dropdown-submenu-2"><a href="">SUBMENU 1</a>
+                            <ul class="submenu-2">
+                                <li><a href="">SUBMENU 2</a></li>
+                                <li><a href="">SUBMENU 2</a></li>
+                                <li><a href="">SUBMENU 2</a></li>
+                                <li><a href="">SUBMENU 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">CLIENTES</a></li>
+                <li><a href="">CONTATO</a></li>
+            </ul>
+        </nav>
+        <div class="header-slide">
+            <a class="nivo-nextNav"></a>
+            <div id="slider" class="nivoSlider">
+                <img src="img/up.jpg"
+                    alt="" />
+                <img src="img/toystory.jpg"
+                     alt="" />
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <section>
+                <span class="main-title">TESTE DE HTML E CSS</span>
+                <p>
+                    <span>Quesitos de avaliação</span>
+                <ul>
+                    <li>Organização do Codigo (quanto mais limpo melhor)</li>
+                    <li>Nivel de detalhismo (quanto mais identico melhor)</li>
+                    <li>Tempo de desenvolvimento: 10 horas</li>
+                </ul>
+                <span>Obrigado e boa sorte!</span>
+                </p>
+            </section>
+            <img class="image-main" src="img/Teste.png" alt="">
+        </div>
+        <div class="highlight-boxes">
+            <span>BOXES DE DESTAQUE</span>
+            <div class="boxes">
+                <div class="box">
+                    <img src="img/Teste.png">
+                    <div class="box-text">
+                        <p>Texto descritivo com link apenas</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/Teste.png">
+                    <div class="box-text">
+                        <p>Texto descritivo com link apenas</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/Teste.png">
+                    <div class="box-text">
+                        <p>Texto descritivo com link apenas</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/Teste.png">
+                    <div class="box-text">
+                        <p>Texto descritivo com link apenas</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div>
+            <ul class="footer-buttons">
+                <li><a href="">HOME</a></li>
+                <li><a href="">EMPRESA</a></li>
+                <li><a href="">CLIENTES</a></li>
+                <li><a href="">CONTATO</a></li>
+            </ul>
+        </div>
+        <div>
+        <span>RODAPE</span>
+        </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/nivo-slider/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                effect: 'sliceDownLeft',
+                animSpeed: 500,
+                pauseTime: 3000,
+                startSlide: 0,
+                directionNav: false,
+                controlNav: false,
+                pauseOnHover: true,
+                manualAdvance: false,
+                randomStart: false,
+            });
+        });
+    </script>
+</body>
+
+</html>
